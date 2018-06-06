@@ -1,5 +1,7 @@
 import _ from 'lodash';
 
+const json = require('./json/sample.json');
+
 function component() {
 	var element = document.createElement('div');
 
@@ -10,4 +12,13 @@ function component() {
 	return element;
 }
 
+function jsonText() {
+	var element = document.createElement('div');
+
+	element.innerHTML = json.sample;
+
+	return element;
+}
+
 document.body.appendChild(component());
+document.body.appendChild(jsonText());
