@@ -1,3 +1,3 @@
 # webpack-starter
 
-Node Version 8
+Node Version 12
